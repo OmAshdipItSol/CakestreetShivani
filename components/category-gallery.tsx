@@ -25,8 +25,7 @@ const categories: Category[] = [
       "/bento-3-three.jpeg",
       "/bento-4-four.jpeg",
       "/bento-5-five.jpeg",
-      "/bento-6-six.jpeg",
-      "/.jpg"
+      "/bento-6-six.jpeg"
     ],
   },
   {
