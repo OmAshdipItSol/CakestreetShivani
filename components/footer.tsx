@@ -26,17 +26,18 @@ export default function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="font-light text-lg mb-4">Follow Us</h4>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-background/80 hover:text-background transition-all group"
-            >
-              <Instagram className="w-5 h-5 group-hover:scale-110" />
-              <span className="font-light">@cakestreet2023</span>
-            </a>
-          </div>
+  <h4 className="font-light text-lg mb-4">Follow Us</h4>
+  <a
+    href="https://www.instagram.com/cakestreat2023?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 text-background/80 hover:text-background transition-all group"
+  >
+    <Instagram className="w-5 h-5 transition-transform group-hover:scale-110" />
+    <span className="font-light">@cakestreat2023</span>
+  </a>
+</div>
+
         </div>
 
         {/* Divider */}
