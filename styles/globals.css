@@ -1,0 +1,156 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ===============================
+   ROYAL HERITAGE CAKE SHOP THEME
+   =============================== */
+
+:root {
+  /* ===============================
+     BACKGROUND & TEXT
+     =============================== */
+  --background: oklch(96% 0.03 85);           /* Rich Ivory */
+  --foreground: oklch(20% 0.05 35);           /* Deep Cocoa */
+
+  /* ===============================
+     SURFACES
+     =============================== */
+  --card: oklch(25% 0.05 35);                 /* Dark Chocolate Cards */
+  --card-foreground: oklch(96% 0.03 85);      /* Ivory Text on Cards */
+
+  --popover: oklch(25% 0.05 35);
+  --popover-foreground: oklch(96% 0.03 85);
+
+  /* ===============================
+     BRAND COLORS
+     =============================== */
+  --primary: oklch(74% 0.16 75);               /* Antique Gold CTAs */
+  --primary-foreground: oklch(20% 0.05 35);    /* Cocoa Text on Gold */
+
+  --secondary: oklch(35% 0.13 20);             /* Royal Wine */
+  --secondary-foreground: oklch(96% 0.03 85);
+
+  --accent: oklch(74% 0.16 75);                /* Gold Accents */
+  --accent-foreground: oklch(20% 0.05 35);
+
+  /* ===============================
+     UTILITIES
+     =============================== */
+  --muted: oklch(90% 0.03 85);                 /* Deep Ivory/Beige */
+  --muted-foreground: oklch(35% 0.05 35);
+
+  --destructive: oklch(45% 0.15 25);           /* Red/Wine */
+  --destructive-foreground: oklch(96% 0.03 85);
+
+  --border: oklch(74% 0.16 75);                /* Gold Borders */
+  --input: oklch(90% 0.03 85);
+  --ring: oklch(74% 0.16 75);                  /* Gold Ring */
+
+  /* ===============================
+     SHAPE
+     =============================== */
+  --radius: 1.75rem;                           /* Palace Softness */
+
+  /* ===============================
+     CHARTS (ROYAL DESSERT)
+     =============================== */
+  --chart-1: oklch(58% 0.18 25);   /* Berry */
+  --chart-2: oklch(72% 0.16 85);   /* Gold */
+  --chart-3: oklch(38% 0.08 30);   /* Cocoa */
+  --chart-4: oklch(60% 0.14 140);  /* Pistachio */
+  --chart-5: oklch(64% 0.16 60);   /* Caramel */
+
+  /* ===============================
+     SIDEBAR
+     =============================== */
+  --sidebar: oklch(95% 0.02 85);
+  --sidebar-foreground: oklch(22% 0.04 35);
+  --sidebar-primary: oklch(28% 0.09 30);
+  --sidebar-primary-foreground: oklch(98% 0.01 95);
+  --sidebar-accent: oklch(38% 0.12 15);
+  --sidebar-accent-foreground: oklch(96% 0.02 95);
+  --sidebar-border: oklch(88% 0.03 85);
+  --sidebar-ring: oklch(78% 0.16 85);
+}
+
+/* ===============================
+   DARK MODE – PALACE NIGHT
+   =============================== */
+
+.dark {
+  --background: oklch(15% 0.03 35);            /* Deepest Cocoa */
+  --foreground: oklch(96% 0.03 85);
+
+  --card: oklch(20% 0.04 35);
+  --card-foreground: oklch(96% 0.03 85);
+
+  --popover: oklch(20% 0.04 35);
+  --popover-foreground: oklch(96% 0.03 85);
+
+  --primary: oklch(74% 0.16 75);               /* Gold */
+  --primary-foreground: oklch(20% 0.05 35);
+
+  --secondary: oklch(35% 0.13 20);             /* Royal Wine */
+  --secondary-foreground: oklch(96% 0.03 85);
+
+  --accent: oklch(74% 0.16 75);
+  --accent-foreground: oklch(20% 0.05 35);
+
+  --muted: oklch(25% 0.04 35);
+  --muted-foreground: oklch(70% 0.03 85);
+
+  --border: oklch(30% 0.05 35);
+  --input: oklch(30% 0.05 35);
+  --ring: oklch(74% 0.16 75);
+}
+
+/* ===============================
+   THEME MAPPING
+   =============================== */
+
+@theme inline {
+  --font-sans: 'Playfair Display', 'Libre Baskerville', serif;
+  --font-mono: 'Geist Mono';
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2rem;
+}
+
+/* ===============================
+   BASE STYLES
+   =============================== */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/30;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
